@@ -1,0 +1,9 @@
+# Open the file in write mode ('w')
+with open('myfile.txt', 'w') as file:
+    # Ask the user to input three lines
+    for i in range(3):
+        line = input(f"Enter line {i + 1}: ")
+        # Write the entered line to the file
+        file.write(line + '\n')
+
+print("File 'myfile.txt' has been created with your input.")
